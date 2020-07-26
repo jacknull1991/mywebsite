@@ -7,7 +7,10 @@
     maximum-scale=1, minimum-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
 
@@ -16,25 +19,160 @@
             <div class="greeting-wrapper">
                 <h1>Hi, I'm Xixiang Chen</h1>
             </div>
+
+            <div class="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dots-wrapper">
+                        <div id="dot-1" class="browser-dot"></div>
+                        <div id="dot-2" class="browser-dot"></div>
+                        <div id="dot-3" class="browser-dot"></div>
+                    </div>
+                    <ul id="navigation">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="left-column">
+                    <img id="profile_pic" src="images/placeholder.jpeg">
+                    <h5 style="text-align: center; line-height: 0;" >Personalize Theme</h5>
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                    </div>
+
+                    <p id="settings-note">*Theme  settings will be saved for<br>your next visit</p>
+                </div>
+
+                <div class="right-column">
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>What I Do</h3>
+                            <p>I was a java developer for a while, now I am to be a software engineer.</p>
+                            <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            About
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>I learn and build things whenever I feel it. I also enjoy solving problems on leetcode.</p>
+                    <p>I am currently in search of a job opportunity.</p>
+
+                    <hr>
+
+                    <h4>TOP EXPERTISE</h4>
+
+                    <p>Fullstack developer with primary focus on Java + JavaScript: 
+                        <a target="_blank" href="resume.pdf">Download Resume</a>
+                    </p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Python</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+
+                        <ul>
+                            <li>Oracle</li>
+                            <li>MongoDB</li>
+                            <li>Postgres</li>
+                            <li>Heroku</li>
+                            <li>Node</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <img id="social_img" src="images/placeholder.jpeg">
+                    <h3>Find me on github</h3>
+                    <a target="_blank" href="#">Github: jacknull1991</a>
+                    <br>
+                    <a target="_blank" href="#">LinkedIn: /in/xixiang-chen</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s1">
         <div class="main-container">
-            Porfolio
+            <h3 style="text-align: center;">Some of my projects</h3>
+            <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/placeholder.jpeg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">Post Intro. This is a sentence. Some more text.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/placeholder.jpeg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">Post Intro. This is a sentence. Some more text.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/placeholder.jpeg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">Post Intro. This is a sentence. Some more text.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get In Touch</h3>
+
+            <form id="contact-form">
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" type="text" name="message"></textarea>
+
+                <input type="submit" value="Send" id="submit-btn">
+            </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
